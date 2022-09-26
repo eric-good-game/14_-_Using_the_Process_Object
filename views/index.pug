@@ -1,0 +1,34 @@
+extends layout.pug
+
+block head_scripts 
+    link(rel="stylesheet", href="/css/home.css")
+
+block content
+    //- div#loader-container
+    //-     div.loader.loader2
+    .container 
+        .message
+            h2 Bienvenido #{user.name}
+        main 
+            .loader-container 
+                span.loader3
+            h3 Sección en desarollo.
+            button.btn-logout(onClick= `window.location.assign('/auth/logout')`)
+                p Log out
+            //- h2 Welcome to the home page
+//- <div className="container">
+//-     <div className="message">
+//-         <h2>{`Bienvenido ${user}`}</h2>
+//-     </div>
+//-     <main>
+//-         <div className="loader-container">
+//-             <span className="loader"></span>
+//-         </div>
+//-         <h3>Sección en desarollo...</h3>
+//-         <button className="btn-logout" onClick={()=>{
+//-             navigate("/logout")
+//-         }}>
+//-             <p>Log out</p>
+//-         </button>
+//-     </main>
+//- </div>

@@ -1,0 +1,8 @@
+form(id= type)
+    p.error.hidden
+    for key in inputs
+        -const input = formInputs.find(input => input.name === key)
+        +input(input, data)
+    section.btns
+        button(id= `btn-${type}`, type='submit')
+        a(href= link)= linkLabel

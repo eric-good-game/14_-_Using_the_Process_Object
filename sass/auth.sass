@@ -1,0 +1,65 @@
+#form-login, #form-signup
+    width: 300px
+    padding: 1.25rem
+    border: .5px solid lightgray
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
+    align-self: center
+    margin: auto
+    border-radius: .5rem
+    background-color: white
+    h1
+        text-align: center
+        margin-bottom: 1rem
+    #login section, #signup section
+        display: flex
+        flex-direction: column
+        &:not(:last-child)
+            margin-bottom: 1rem
+        label
+            // margin-bottom: .25rem
+            font-weight: 500
+        input
+            padding: .5rem
+            border: none
+            border-bottom: 2px solid lightgray
+            outline: none
+            &:focus
+                transition: .3s
+                border-bottom: 2px solid #007bff
+            &.error 
+                border-bottom-color: red
+        button
+            font-size: 1rem
+            width: 100%
+            padding: .5rem
+            border: none
+            border-radius: 5px
+            background-color: #007bff
+            color: white
+            font-weight: bold
+            &:hover
+                transition: .3s
+                cursor: pointer
+                background-color: #0069d9
+            &:focus
+                outline: none
+        p
+            transform: translateY(1.5px)
+        a
+            margin-top: 1rem
+            display: block
+            align-self: center
+            font-size: 1rem
+            // transition: .2s
+            &:hover
+                transition: .3s
+                font-weight: 600
+                cursor: pointer
+                text-decoration: underline
+p.error
+    margin-bottom: 1rem
+    color: red
+    &.disable
+        display: none
+.hidden
+    display: none

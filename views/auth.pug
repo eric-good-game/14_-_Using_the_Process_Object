@@ -1,0 +1,11 @@
+extends layout
+
+block head_scripts
+    link(rel="stylesheet", href="/css/auth.css")
+
+block content
+    div#form-login
+        h1= title
+        include partials/auth/form.pug
+block footer_scripts
+    script(src="/js/auth.js")

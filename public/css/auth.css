@@ -1,0 +1,84 @@
+#form-login, #form-signup {
+  width: 300px;
+  padding: 1.25rem;
+  border: 0.5px solid lightgray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  align-self: center;
+  margin: auto;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+#form-login h1, #form-signup h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#form-login #login section, #form-login #signup section, #form-signup #login section, #form-signup #signup section {
+  display: flex;
+  flex-direction: column;
+}
+#form-login #login section:not(:last-child), #form-login #signup section:not(:last-child), #form-signup #login section:not(:last-child), #form-signup #signup section:not(:last-child) {
+  margin-bottom: 1rem;
+}
+#form-login #login section label, #form-login #signup section label, #form-signup #login section label, #form-signup #signup section label {
+  font-weight: 500;
+}
+#form-login #login section input, #form-login #signup section input, #form-signup #login section input, #form-signup #signup section input {
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  outline: none;
+}
+#form-login #login section input:focus, #form-login #signup section input:focus, #form-signup #login section input:focus, #form-signup #signup section input:focus {
+  transition: 0.3s;
+  border-bottom: 2px solid #007bff;
+}
+#form-login #login section input.error, #form-login #signup section input.error, #form-signup #login section input.error, #form-signup #signup section input.error {
+  border-bottom-color: red;
+}
+#form-login #login section button, #form-login #signup section button, #form-signup #login section button, #form-signup #signup section button {
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+#form-login #login section button:hover, #form-login #signup section button:hover, #form-signup #login section button:hover, #form-signup #signup section button:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #0069d9;
+}
+#form-login #login section button:focus, #form-login #signup section button:focus, #form-signup #login section button:focus, #form-signup #signup section button:focus {
+  outline: none;
+}
+#form-login #login section p, #form-login #signup section p, #form-signup #login section p, #form-signup #signup section p {
+  transform: translateY(1.5px);
+}
+#form-login #login section a, #form-login #signup section a, #form-signup #login section a, #form-signup #signup section a {
+  margin-top: 1rem;
+  display: block;
+  align-self: center;
+  font-size: 1rem;
+}
+#form-login #login section a:hover, #form-login #signup section a:hover, #form-signup #login section a:hover, #form-signup #signup section a:hover {
+  transition: 0.3s;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+p.error {
+  margin-bottom: 1rem;
+  color: red;
+}
+p.error.disable {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=auth.css.map */

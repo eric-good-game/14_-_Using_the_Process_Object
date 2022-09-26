@@ -1,0 +1,61 @@
+.container {
+  margin: 0px auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 0.75rem;
+  border: 1px solid cyan;
+  border-radius: 0.25rem;
+  background-color: lightcyan;
+}
+.message h2 {
+  transform: translateY(2px);
+}
+
+.message2 {
+  padding: 0.75rem;
+  border: 1px solid lightgray;
+  border-radius: 0.25rem;
+  box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.message2 h2 {
+  transform: translateY(2px);
+}
+
+main .loader-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+main h3 {
+  text-align: center;
+}
+main .btn-logout {
+  display: block;
+  padding: 0.4rem;
+  font-size: 1rem;
+  margin: 0.75rem auto 0px;
+  background-color: transparent;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+main .btn-logout:hover {
+  letter-spacing: 1.5px;
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+  background-color: white;
+  border-color: transparent;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+#loader-container {
+  margin: auto;
+}
+
+/*# sourceMappingURL=home.css.map */

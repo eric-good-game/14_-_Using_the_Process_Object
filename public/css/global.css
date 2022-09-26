@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@400;500;600;700&display=swap");
+.loader1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader1::after {
+  display: block;
+  content: " ";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader2 {
+  color: #263038;
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: 78px;
+  opacity: 0.8;
+}
+
+.loader2:before {
+  content: "{";
+  display: inline-block;
+  animation: pulse 0.4s alternate infinite ease-in-out;
+}
+
+.loader2:after {
+  content: "}";
+  display: inline-block;
+  animation: pulse 0.4s 0.3s alternate infinite ease-in-out;
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+.loader3 {
+  width: 128px;
+  height: 128px;
+  display: inline-block;
+  position: relative;
+  background-color: gray;
+  transform: rotate(45deg);
+}
+
+.loader3::before {
+  content: "";
+  box-sizing: border-box;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 0;
+  top: -64px;
+  animation: animloader 4s ease infinite;
+}
+
+.loader3::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  animation: animloader2 2s ease infinite;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: 0 64px rgba(255, 255, 255, 0), 64px 64px rgba(255, 255, 255, 0), 64px 128px rgba(255, 255, 255, 0), 0px 128px rgba(255, 255, 255, 0);
+  }
+  12% {
+    box-shadow: 0 64px white, 64px 64px rgba(255, 255, 255, 0), 64px 128px rgba(255, 255, 255, 0), 0px 128px rgba(255, 255, 255, 0);
+  }
+  25% {
+    box-shadow: 0 64px white, 64px 64px white, 64px 128px rgba(255, 255, 255, 0), 0px 128px rgba(255, 255, 255, 0);
+  }
+  37% {
+    box-shadow: 0 64px white, 64px 64px white, 64px 128px white, 0px 128px rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow: 0 64px white, 64px 64px white, 64px 128px white, 0px 128px white;
+  }
+  62% {
+    box-shadow: 0 64px rgba(255, 255, 255, 0), 64px 64px white, 64px 128px white, 0px 128px white;
+  }
+  75% {
+    box-shadow: 0 64px rgba(255, 255, 255, 0), 64px 64px rgba(255, 255, 255, 0), 64px 128px white, 0px 128px white;
+  }
+  87% {
+    box-shadow: 0 64px rgba(255, 255, 255, 0), 64px 64px rgba(255, 255, 255, 0), 64px 128px rgba(255, 255, 255, 0), 0px 128px white;
+  }
+  100% {
+    box-shadow: 0 64px rgba(255, 255, 255, 0), 64px 64px rgba(255, 255, 255, 0), 64px 128px rgba(255, 255, 255, 0), 0px 128px rgba(255, 255, 255, 0);
+  }
+}
+@keyframes animloader2 {
+  0% {
+    transform: translate(0, 0) rotateX(0) rotateY(0);
+  }
+  25% {
+    transform: translate(100%, 0) rotateX(0) rotateY(180deg);
+  }
+  50% {
+    transform: translate(100%, 100%) rotateX(-180deg) rotateY(180deg);
+  }
+  75% {
+    transform: translate(0, 100%) rotateX(-180deg) rotateY(360deg);
+  }
+  100% {
+    transform: translate(0, 0) rotateX(0) rotateY(360deg);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+body, input, label, button {
+  font-family: "Arima", cursive;
+}
+
+body {
+  display: flex;
+  padding: 1.5rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=global.css.map */

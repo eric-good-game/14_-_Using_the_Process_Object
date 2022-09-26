@@ -1,0 +1,12 @@
+extends layout 
+
+block head_scripts 
+    link(rel="stylesheet", href="./css/info.css")
+
+block content
+    .container
+        h1= title
+        each label, key in Object(labels)
+            div 
+                p= label
+                p= info[key]

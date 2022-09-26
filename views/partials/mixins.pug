@@ -1,0 +1,5 @@
+mixin input(input)
+    - const {label, ...attrs} = input
+    section.input
+        label(for=input.name)= input.label
+        input&attributes(attrs)
